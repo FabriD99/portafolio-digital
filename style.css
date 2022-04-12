@@ -1,0 +1,379 @@
+/*******PALETA DE COLORES*******/
+/*  color: #00ADB5;
+    color: #222831;
+    color: #393E46;
+    color: #EEEEEE; */
+
+/* ------------------Pagina------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+}
+
+/* ------------------Menu------------------- */
+.menu-container {
+  background-color: #222831;
+  position: sticky;
+  top: 0;
+}
+
+.lista-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  list-style: none;
+  justify-items: stretch;
+}
+
+.item-menu {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  flex-direction: row;
+  padding: 20px;
+}
+
+h2 {
+  font-weight: bold;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 15px 0;
+  width: 100%;
+}
+
+a:link {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00adb5;
+}
+
+/* ------------------Inicio------------------- */
+.inicio-container {
+  display: grid;
+  background-image: url("Images/fondo-logo.jpg");
+  background-size: cover;
+  color: #eeeeee;
+  height: 900px;
+}
+
+.inicio {
+  display: flex;
+  font-size: xxx-large;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio img {
+  width: 200px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+
+/* ------------------Sobre Mi------------------- */
+.sobreMi-container {
+  border-bottom: 1px solid #222831;
+}
+
+.sobreMi {
+  display: grid;
+  grid-template-rows: 10rem 10rem;
+  grid-template-columns: min-content;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 40px;
+}
+
+/* ------------------Proyectos------------------- */
+.proyectos-container {
+  border-bottom: 1px solid #222831;
+}
+
+.proyectos {
+  display: grid;
+  margin: 40px;
+  gap: 1.5rem;
+  grid-template-rows: 300px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "proyecto1 proyecto2 proyecto3"
+    ". vermas .";
+  justify-items: center;
+}
+#proyecto1 {
+  grid-area: proyecto1;
+}
+#proyecto2 {
+  grid-area: proyecto2;
+}
+#proyecto3 {
+  grid-area: proyecto3;
+}
+#vermas {
+  grid-area: vermas;
+  color: #393e46;
+}
+#vermas:hover {
+  color: #00adb5;
+  transform: scale(95%);
+  transition: 0.2s;
+}
+.proyecto {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 3px solid #393e46;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 0px 5px #00adb5;
+  justify-content: center;
+}
+
+.proyecto a {
+  background-color: #eeeeee;
+  color: #222831;
+  border: 1px dashed #00adb5;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 2px;
+}
+
+.proyecto:hover {
+  transition: all 0.1s ease-in-out;
+  transform: scale(0.95);
+  border-color: #00adb5;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* ------------------Habilidades------------------- */
+.habilidades-container {
+  border-bottom: 1px solid #222831;
+}
+
+.habilidades {
+  margin: 40px;
+}
+.habilidades-lista {
+  display: grid;
+  gap: 1px;
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  justify-items: stretch;
+}
+
+.habilidades-lista li {
+  padding: 50px 200px;
+  margin: 5px;
+  background-color: #00adb5;
+  color: #eeeeee;
+}
+
+.habilidades-lista li:hover {
+  transition: 0.5s ease;
+  opacity: 0.7;
+  background-color: #393e46;
+}
+#html:hover {
+  transform: scaleX(90%);
+}
+#css:hover {
+  transform: scaleX(50%);
+}
+#javascript:hover {
+  transform: scaleX(70%);
+}
+#bootstrap:hover {
+  transform: scaleX(40%);
+}
+#react:hover {
+  transform: scaleX(30%);
+}
+
+/* ------------------Experiencia------------------- */
+.experiencias-container {
+  border-bottom: 1px solid #222831;
+}
+
+.experiencias {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 10rem ;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin: 40px;
+  }
+
+/* ------------------Contacto------------------- */
+.contacto-container {
+  border-bottom: 1px solid #222831;
+}
+
+.contacto {
+  margin: 40px;
+  font-weight: bold;
+}
+
+.formulario {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 10rem 10rem;
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-items: stretch;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "nombre email"
+    "mensaje mensaje"
+    "submit submit";
+}
+#nombre {
+  grid-area: nombre;
+  width: 100%;
+}
+#email {
+  grid-area: email;
+  width: 100%;
+}
+#mensaje {
+  grid-area: mensaje;
+  width: 100%;
+  height: 100%;
+}
+#submit {
+  grid-area: submit;
+}
+#submit {
+  background-color: #eeeeee;
+  color: #222831;
+  border: 2px solid #00adb5;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #00adb5;
+  transform: scale(95%);
+}
+
+/* ------------------Footer------------------- */
+.footer-container {
+  background-color: #222831;
+  text-align: center;
+  color: #eeeeee;
+  padding-bottom: 45px;
+  padding-top: 45px;
+}
+
+.footer p {
+  padding-top: 20px;
+}
+
+.footer li {
+  display: inline-block;
+  padding: 20px 15px;
+}
+
+.footer a img {
+  width: 25px;
+}
+
+#logo {
+  width: 100px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+#linkedin {
+  transition: 0.2s ease;
+}
+#linkedin:hover {
+  transform: scale(2);
+  filter: invert();
+}
+#instagram {
+  transition: 0.2s ease;
+}
+#instagram:hover {
+  transform: scale(2);
+  filter: invert();
+}
+#github {
+  transition: 0.2s ease;
+}
+#github:hover {
+  transform: scale(2);
+  filter: invert();
+}
+
+/*------------------Pagina Proyectos------------------- */
+#proyectos-pag-titulo {
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #222831;
+  color: #eeeeee;
+  padding: 20px;
+}
+
+.proyectos-pag {
+  display: grid;
+  margin: 20px;
+  gap: 1.5rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.proyecto-pag {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  border: 3px solid #393e46;
+  width: auto;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 0px 5px #00adb5;
+}
+
+.proyecto-pag a {
+  background-color: #eeeeee;
+  color: #222831;
+  border: 1px dashed #00adb5;
+  border-radius: 5px;
+  font-size: 16px;
+  width: auto;
+  margin: 2px;
+}
+
+.proyecto-pag:hover {
+  transition: all 0.1s ease-in-out;
+  transform: scale(0.95);
+  border-color: #00adb5;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.proyecto-pag a:hover {
+  background-color: #00adb5;
+}

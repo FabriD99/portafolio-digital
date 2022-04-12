@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio Digital Di Stefano</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+<!-- single-page application -->
+
+<body>
+    <!----------------------Menu----------------------->
+    <header class="menu-container">
+        <nav class="menu" style="text-align: center;">
+            <!-- Barra navegable por toda la pagina (que se vea aunque baje en la pagina) -->
+            <ul class="lista-menu">
+                <li class="item-menu">
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#sobreMi">Sobre Mi</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#habilidades">Habilidades</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#experiencias">Experiencia</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!----------------------Inicio----------------------->
+    <section id="inicio" class="inicio-container">
+
+        <div class="inicio">
+            <!-- Logo y Descripcion corta -->
+            <img src="./Images/Logo.png" alt="Logo/Imagen de perfil" width="70">
+            <h1>Fabrizio Di Stefano</h1>
+            <h4>Desarollador WEB</h4>
+        </div>
+    </section>
+
+
+    <!----------------------Sobre Mi----------------------->
+    <section id="sobreMi" class="sobreMi-container">
+        <h2>Sobre Mi</h2>
+        <div class="sobreMi">
+
+            <!-- Foto y descripcion personal -->
+            <img src="./Images/Imagen.png" alt="Imagen descriptiva">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, facilis deserunt rem fugiat vitae
+                quibusdam eos tempore obcaecati libero reiciendis quaerat ad, modi quod accusantium laboriosam nulla
+                odio
+                ipsa quae?
+            </p>
+        </div>
+    </section>
+
+
+    <!----------------------Proyectos----------------------->
+    <section id="proyectos" class="proyectos-container">
+        <h2>Proyectos</h2>
+        <div class="proyectos">
+            <!-- Imagen representativa de cada proyecto y un breve resumen -->
+            <div class="proyecto" style="background-image: url(/Images/Imagen.png);" id="proyecto1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                    alias!
+                </p>
+            </div>
+            <div class="proyecto" style="background-image: url(/Images/Imagen.png);" id="proyecto2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                    alias!
+                </p>
+            </div>
+            <div class="proyecto" style="background-image: url(/Images/Imagen.png);" id="proyecto3">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                    alias!
+                </p>
+            </div>
+
+            <a href="./pages/proyectos.html" target="blank" id="vermas">
+                <p><b> +Ver mas proyectos</b></p>
+            </a>
+        </div>
+    </section>
+
+
+    <!----------------------Habilidades----------------------->
+    <section id="habilidades" class="habilidades-container">
+        <h2>Habilidades</h2>
+        <div class="habilidades">
+
+            <!-- Cada item con su "barra de progreso" indicando conocimientos-->
+            <ul class="habilidades-lista">
+                <li id="html">HTML</li>
+                <li id="css">CSS</li>
+                <li id="javascript">JAVASCRIPT</li>
+                <li id="bootstrap">BOOTSTRAP</li>
+                <li id="react">REACT</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!----------------------Experiencia----------------------->
+    <section id="experiencias" class="experiencias-container">
+        <h2>Experiencia</h2>
+        <div class="experiencias">
+
+            <div class="experiencia">
+                <!-- Comentarios de referentes sobre mi desempeño -->
+                <img src="./Images/Icono.jpg" alt="Proyecto 1" width="50">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quis, ducimus.
+                </p>
+            </div>
+            <div class="experiencia">
+                <img src="./Images/Icono.jpg" alt="Proyecto 2" width="50">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quis, ducimus.
+                </p>
+            </div>
+            <div class="experiencia">
+                <img src="./Images/Icono.jpg" alt="Proyecto 3" width="50">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quis, ducimus.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------------------Contacto------------------------>
+    <section id="contacto" class="contacto-container">
+        <h2>Contacto</h2>
+        <div class="contacto">
+            <!-- Formulario de contacto -->
+            <form class="formulario">
+                <div id="nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="name">
+                </div>
+                <div id="email">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email">
+                </div>
+                <div id="mensaje">
+                    <textarea name="mensaje" id="mensaje" placeholder="Escriba un mensaje"></textarea>
+                </div>
+                <input type="button" value="Enviar" id="submit">
+            </form>
+        </div>
+    </section>
+
+
+    <!------------------------Footer------------------------->
+    <footer class="footer-container">
+        <div class="footer">
+            <!-- Logo/imagen de prefil y email de contacto -->
+            <img src="./Images/Logo.png" alt="Logo/Imagen de perfil" id="logo">
+            <p>fabriziodistefano987@gmail.com</p>
+
+            <!-- Los items de las Redes Sociales con su Icono -->
+            <ul class="redes">
+                <li>
+                    <a href="https://www.linkedin.com/in/fabrizio-di-stefano/" target="blank">
+                        <img src="Images/Picons Social/PNG/512/social-011_linkedin.png" alt="LinkedIn" id="linkedin">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/fabri.distefano/" target="blank">
+                        <img src="Images/Picons Social/PNG/512/social-038_instagram.png" alt="Instagram" id="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/FabriD99" target="blank">
+                        <img src="Images/Picons Social/PNG/512/social-041-round_github.png" alt="Github" id="github">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
