@@ -17,6 +17,7 @@
   background-color: #222831;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .lista-menu {
@@ -174,21 +175,22 @@ a:hover {
   display: grid;
   gap: 1px;
   grid-template-rows: repeat(5, 1fr);
-  justify-content: center;
-  justify-items: stretch;
 }
 
 .habilidades-lista li {
   padding: 50px 200px;
   margin: 5px;
-  background-color: #00adb5;
+  list-style-type: none;
+  background: rgb(34,40,49);
+  background: linear-gradient(56deg, rgba(34,40,49,1) 0%, rgba(19,75,83,1) 43%, rgba(18,133,144,1) 73%, rgba(20,145,156,1) 89%, rgba(18,161,171,1) 97%, rgba(0,173,181,0.9248074229691877) 100%);
   color: #eeeeee;
 }
 
 .habilidades-lista li:hover {
   transition: 0.5s ease;
   opacity: 0.7;
-  background-color: #393e46;
+  background: rgb(34,40,49);
+  background: linear-gradient(56deg, rgba(34,40,49,1) 0%, rgba(19,75,83,1) 43%, rgba(18,133,144,1) 73%, rgba(20,145,156,1) 89%, rgba(18,161,171,1) 97%, rgba(0,173,181,0.9248074229691877) 100%);
 }
 #html:hover {
   transform: scaleX(90%);
@@ -214,11 +216,11 @@ a:hover {
 .experiencias {
   display: grid;
   gap: 10px;
-  grid-template-rows: 10rem ;
+  grid-template-rows: 10rem;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   margin: 40px;
-  }
+}
 
 /* ------------------Contacto------------------- */
 .contacto-container {
@@ -233,7 +235,7 @@ a:hover {
 .formulario {
   display: grid;
   gap: 5px;
-  grid-template-columns: 10rem 10rem;
+  grid-template-columns: 9rem 9rem;
   grid-template-rows: 1fr 2fr 1fr;
   justify-items: stretch;
   justify-content: center;
@@ -271,13 +273,32 @@ a:hover {
 }
 
 #submit:hover {
-  background-color: #00adb5;
+  background: rgb(34, 40, 49);
+  background: linear-gradient(
+    56deg,
+    rgba(34, 40, 49, 1) 0%,
+    rgba(19, 75, 83, 1) 43%,
+    rgba(18, 133, 144, 1) 73%,
+    rgba(20, 145, 156, 1) 89%,
+    rgba(18, 161, 171, 1) 97%,
+    rgba(0, 173, 181, 0.9248074229691877) 100%
+  );
+  color: #eeeeee;
   transform: scale(95%);
 }
 
 /* ------------------Footer------------------- */
 .footer-container {
-  background-color: #222831;
+  background: rgb(34, 40, 49);
+  background: linear-gradient(
+    56deg,
+    rgba(34, 40, 49, 1) 0%,
+    rgba(19, 75, 83, 1) 43%,
+    rgba(18, 133, 144, 1) 73%,
+    rgba(20, 145, 156, 1) 89%,
+    rgba(18, 161, 171, 1) 97%,
+    rgba(0, 173, 181, 0.9248074229691877) 100%
+  );
   text-align: center;
   color: #eeeeee;
   padding-bottom: 45px;
