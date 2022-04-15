@@ -15,8 +15,8 @@
 /* ------------------Menu------------------- */
 .menu-container {
   background-color: #222831;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  width: 100%;
   z-index: 100;
 }
 
@@ -104,63 +104,19 @@ a:hover {
 .proyectos-container {
   border-bottom: 1px solid #222831;
 }
-
-.proyectos {
-  display: grid;
-  margin: 40px;
-  gap: 1.5rem;
-  grid-template-rows: 300px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "proyecto1 proyecto2 proyecto3"
-    ". vermas .";
-  justify-items: center;
-}
-#proyecto1 {
-  grid-area: proyecto1;
-}
-#proyecto2 {
-  grid-area: proyecto2;
-}
-#proyecto3 {
-  grid-area: proyecto3;
-}
-#vermas {
-  grid-area: vermas;
-  color: #393e46;
-}
-#vermas:hover {
-  color: #00adb5;
-  transform: scale(95%);
-  transition: 0.2s;
-}
-.proyecto {
+.proyectos{
   display: flex;
-  gap: 5px;
   flex-direction: column;
-  flex-wrap: wrap;
-  border: 3px solid #393e46;
-  background-size: cover;
-  background-position: center center;
-  box-shadow: 0px 0px 5px #00adb5;
-  justify-content: center;
+  align-items: center;
 }
 
-.proyecto a {
-  background-color: #eeeeee;
+#verMas {
   color: #222831;
-  border: 1px dashed #00adb5;
-  border-radius: 5px;
   font-size: 16px;
-  margin: 2px;
+  margin-top: 20px;
 }
-
-.proyecto:hover {
-  transition: all 0.1s ease-in-out;
-  transform: scale(0.95);
-  border-color: #00adb5;
-  opacity: 0.5;
-  cursor: pointer;
+#verMas:hover{
+  color: #00adb5;
 }
 
 /* ------------------Habilidades------------------- */
