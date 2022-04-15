@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <title>Portafolio Digital Di Stefano</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,37 +73,73 @@
                 quibusdam eos tempore obcaecati libero reiciendis quaerat ad, modi quod accusantium laboriosam nulla
                 odio
                 ipsa quae?
+                <!-- Imagen representativa de cada proyecto y un breve resumen -->
             </p>
         </div>
     </section>
 
 
     <!----------------------Proyectos----------------------->
+
     <section id="proyectos" class="proyectos-container">
         <h2>Proyectos</h2>
         <div class="proyectos">
-            <!-- Imagen representativa de cada proyecto y un breve resumen -->
-            <div class="proyecto" style="background-image: url(/Images/Imagen.png);" id="proyecto1">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                    alias!
-                </p>
-            </div>
-            <div class="proyecto" style="background-image: url(/Images/Imagen.png);" id="proyecto2">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                    alias!
-                </p>
-            </div>
-            <div class="proyecto" style="background-image: url(/Images/Imagen.png);" id="proyecto3">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                    alias!
-                </p>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" style="max-width: 700px; max-height: 500px;">
+                    <div class="carousel-item active">
+                        <img src="https://source.unsplash.com/random" class="bd-placeholder-img d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Proyecto 1</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quae sapiente corrupti
+                                nostrum laborum! Blanditiis reiciendis ad, natus eum id nemo necessitatibus obcaecati,
+                                nostrum magni incidunt saepe atque dolorem consequuntur.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://source.unsplash.com/random" class="bd-placeholder-img d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Proyecto 2</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quae sapiente corrupti
+                                nostrum laborum! Blanditiis reiciendis ad, natus eum id nemo necessitatibus obcaecati,
+                                nostrum magni incidunt saepe atque dolorem consequuntur..</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://source.unsplash.com/random" class="bd-placeholder-img d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Proyecto 3</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quae sapiente corrupti
+                                nostrum laborum! Blanditiis reiciendis ad, natus eum id nemo necessitatibus obcaecati,
+                                nostrum magni incidunt saepe atque dolorem consequuntur.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden-focusable">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden-focusable">Siguiente</span>
+                </button>
             </div>
 
-            <a href="./pages/proyectos.html" target="blank" id="vermas">
-                <p><b> +Ver mas proyectos</b></p>
+            <a class="btn btn-outline-light" style="margin: 20px;" href="./pages/proyectos.html" target="blank"
+                id="verMas">
+                <b>+Ver mas proyectos</b>
             </a>
         </div>
     </section>
@@ -111,13 +151,26 @@
         <div class="habilidades">
 
             <!-- Cada item con su "barra de progreso" indicando conocimientos-->
-            <ul class="habilidades-lista">
-                <li id="html">HTML</li>
-                <li id="css">CSS</li>
-                <li id="javascript">JAVASCRIPT</li>
-                <li id="bootstrap">BOOTSTRAP</li>
-                <li id="react">REACT</li>
-            </ul>
+            <div class="progress" style="height: 100px; margin: 5px;">
+                <div class="progress-bar bg-danger bg-gradient" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 90%">HTML</div>
+            </div>
+            <div class="progress" style="height: 100px; margin: 5px;">
+                <div class="progress-bar bg-primary bg-gradient" role="progressbar" style="width: 70%"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
+            </div>
+            <div class="progress" style="height: 100px; margin: 5px;">
+                <div class="progress-bar bg-warning bg-gradient" role="progressbar" style="width: 55%"
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+            </div>
+            <div class="progress" style="height: 100px; margin: 5px;">
+                <div class="progress-bar bg-success bg-gradient" role="progressbar" style="width: 65%"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+            </div>
+            <div class="progress" style="height: 100px; margin: 5px;">
+                <div class="progress-bar bg-info bg-gradient" role="progressbar" style="width: 40%" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">React</div>
+            </div>
         </div>
     </section>
 
@@ -156,21 +209,24 @@
     <!-----------------------Contacto------------------------>
     <section id="contacto" class="contacto-container">
         <h2>Contacto</h2>
-        <div class="contacto">
+        <div class="container class="mb-3 row">
             <!-- Formulario de contacto -->
-            <form class="formulario">
-                <div id="nombre">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="name">
+            <form class="form-group" style="border: 0ch;">
+                <div class="input-group" style="margin: 5px;">
+                    <span class="input-group-text">Nombre y Apellido</span>
+                    <input type="text" aria-label="First name" placeholder="Nombre" class="form-control">
+                    <input type="text" aria-label="Last name" placeholder="Apellido" class="form-control">
+                  </div>
+                  <div class="input-group flex-nowrap" style="margin: 5px;border: transparent;">
+                    <span class="input-group-text" id="addon-wrapping">Email</span>
+                    <input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" aria-label="Email">
+                  </div>
+                <div class="form-control" style="margin: 5px;">
+                    <textarea class="form-control" placeholder="Escribe un mensaje" id="floatingTextarea2" style="height: 100px; border: transparent;"></textarea>
                 </div>
-                <div id="email">
-                    <label for="email">Email:</label>
-                    <input type="text" name="email">
+                <div class="form-control" style="margin: 5px; border: transparent;">
+                    <button class="btn btn-primary btn-block" type="submit" value="Enviar" id="submit">Enviar</button>
                 </div>
-                <div id="mensaje">
-                    <textarea name="mensaje" id="mensaje" placeholder="Escriba un mensaje"></textarea>
-                </div>
-                <input type="button" value="Enviar" id="submit">
             </form>
         </div>
     </section>
@@ -186,18 +242,21 @@
             <!-- Los items de las Redes Sociales con su Icono -->
             <ul class="redes">
                 <li>
-                    <a href="https://www.linkedin.com/in/fabrizio-di-stefano/" target="blank">
+                    <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"
+                        href="https://www.linkedin.com/in/fabrizio-di-stefano/" target="blank">
                         <img src="Images/Picons Social/PNG/512/social-011_linkedin.png" alt="LinkedIn" id="linkedin">
                     </a>
 
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/fabri.distefano/" target="blank">
+                    <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"
+                        href="https://www.instagram.com/fabri.distefano/" target="blank">
                         <img src="Images/Picons Social/PNG/512/social-038_instagram.png" alt="Instagram" id="instagram">
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/FabriD99" target="blank">
+                    <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github"
+                        href="https://github.com/FabriD99" target="blank">
                         <img src="Images/Picons Social/PNG/512/social-041-round_github.png" alt="Github" id="github">
                     </a>
                 </li>
