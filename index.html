@@ -23,26 +23,26 @@
 <body>
     <!----------------------Menu----------------------->
     <header class="menu-container">
-        <nav class="menu" style="text-align: center;">
+        <nav class="menu" >
             <!-- Barra navegable por toda la pagina (que se vea aunque baje en la pagina) -->
-            <ul class="lista-menu">
-                <li class="item-menu">
-                    <a href="#inicio">Inicio</a>
+            <ul class="nav nav-tabs nav-fill >
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#sobreMi">Sobre Mi</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobreMi">Sobre Mi</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#proyectos">Proyectos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#habilidades">Habilidades</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#experiencias">Experiencia</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiencias">Experiencia</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#contacto">Contacto</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -64,11 +64,11 @@
     <!----------------------Sobre Mi----------------------->
     <section id="sobreMi" class="sobreMi-container">
         <h2>Sobre Mi</h2>
-        <div class="sobreMi">
+        <div class="text-center">
 
             <!-- Foto y descripcion personal -->
-            <img src="./Images/Imagen.png" alt="Imagen descriptiva">
-            <p>
+            <img src="./Images/Logo.png" class="rounded" alt="Imagen descriptiva">
+            <p class="blockquote" id="info">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, facilis deserunt rem fugiat vitae
                 quibusdam eos tempore obcaecati libero reiciendis quaerat ad, modi quod accusantium laboriosam nulla
                 odio
@@ -137,8 +137,7 @@
                 </button>
             </div>
 
-            <a class="btn btn-outline-light" style="margin: 20px;" href="./pages/proyectos.html" target="blank"
-                id="verMas">
+            <a class="btn btn-outline-light" style="margin: 20px;" href="./pages/proyectos.html" id="verMas">
                 <b>+Ver mas proyectos</b>
             </a>
         </div>
@@ -209,20 +208,21 @@
     <!-----------------------Contacto------------------------>
     <section id="contacto" class="contacto-container">
         <h2>Contacto</h2>
-        <div class="container class="mb-3 row">
+        <div class="container class=" mb-3 row">
             <!-- Formulario de contacto -->
             <form class="form-group" style="border: 0ch;">
                 <div class="input-group" style="margin: 5px;">
                     <span class="input-group-text">Nombre y Apellido</span>
                     <input type="text" aria-label="First name" placeholder="Nombre" class="form-control">
                     <input type="text" aria-label="Last name" placeholder="Apellido" class="form-control">
-                  </div>
-                  <div class="input-group flex-nowrap" style="margin: 5px;border: transparent;">
+                </div>
+                <div class="input-group flex-nowrap" style="margin: 5px;border: transparent;">
                     <span class="input-group-text" id="addon-wrapping">Email</span>
                     <input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" aria-label="Email">
-                  </div>
+                </div>
                 <div class="form-control" style="margin: 5px;">
-                    <textarea class="form-control" placeholder="Escribe un mensaje" id="floatingTextarea2" style="height: 100px; border: transparent;"></textarea>
+                    <textarea class="form-control" placeholder="Escribe un mensaje" id="floatingTextarea2"
+                        style="height: 100px; border: transparent;"></textarea>
                 </div>
                 <div class="form-control" style="margin: 5px; border: transparent;">
                     <button class="btn btn-primary btn-block" type="submit" value="Enviar" id="submit">Enviar</button>
