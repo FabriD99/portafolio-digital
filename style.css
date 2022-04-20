@@ -65,18 +65,21 @@
 
 /* ------------------Sobre Mi------------------- */
 .sobreMi-container {
-  border-bottom: 1px solid #222831;
-}
-
-.sobreMi {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.sobreMi{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 40px;
+}
 /* ------------------Proyectos------------------- */
 .proyectos-container {
-  border-bottom: 1px solid #222831;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .proyectos{
   display: flex;
@@ -105,48 +108,20 @@
 
 /* ------------------Habilidades------------------- */
 .habilidades-container {
-  border-bottom: 1px solid #222831;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .habilidades {
   margin: 40px;
 }
-.habilidades-lista {
-  display: grid;
-  gap: 1px;
-  grid-template-rows: repeat(5, 1fr);
-}
-
-.habilidades-lista li {
-  padding: 50px 200px;
-  margin: 5px;
-  list-style-type: none;
-  color: #eeeeee;
-}
-
-.habilidades-lista li:hover {
-  transition: 0.5s ease;
-  opacity: 0.7;
-}
-#html:hover {
-  transform: scaleX(90%);
-}
-#css:hover {
-  transform: scaleX(50%);
-}
-#javascript:hover {
-  transform: scaleX(70%);
-}
-#bootstrap:hover {
-  transform: scaleX(40%);
-}
-#react:hover {
-  transform: scaleX(30%);
-}
 
 /* ------------------Experiencia------------------- */
 .experiencias-container {
-  border-bottom: 1px solid #222831;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .experiencias {
@@ -160,7 +135,9 @@
 
 /* ------------------Contacto------------------- */
 .contacto-container {
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #submit {
