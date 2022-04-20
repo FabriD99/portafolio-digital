@@ -23,26 +23,26 @@
 <body>
     <!----------------------Menu----------------------->
     <header class="menu-container">
-        <nav class="menu" style="text-align: center;">
+        <nav class="menu">
             <!-- Barra navegable por toda la pagina (que se vea aunque baje en la pagina) -->
-            <ul class="lista-menu">
-                <li class="item-menu">
-                    <a href="#inicio">Inicio</a>
+            <ul class="nav nav-tabs nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#sobreMi">Sobre Mi</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobreMi">Sobre Mi</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#proyectos">Proyectos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#habilidades">Habilidades</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#experiencias">Experiencia</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#opiniones">Opiniones</a>
                 </li>
-                <li class="item-menu">
-                    <a href="#contacto">Contacto</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -63,18 +63,17 @@
 
     <!----------------------Sobre Mi----------------------->
     <section id="sobreMi" class="sobreMi-container">
-        <h2>Sobre Mi</h2>
+        <h2 class="titulo">Sobre Mi</h2>
         <div class="sobreMi">
-
             <!-- Foto y descripcion personal -->
-            <img src="./Images/Imagen.png" alt="Imagen descriptiva">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, facilis deserunt rem fugiat vitae
-                quibusdam eos tempore obcaecati libero reiciendis quaerat ad, modi quod accusantium laboriosam nulla
-                odio
-                ipsa quae?
-                <!-- Imagen representativa de cada proyecto y un breve resumen -->
-            </p>
+            <img src="./Images/Logo.png" alt="Imagen descriptiva">
+            <p id="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam est neque adipisci aspernatur ut ducimus
+                velit officiis accusantium voluptatem et optio veniam, nostrum excepturi! Asperiores voluptatibus vel,
+                omnis qui laudantium aspernatur tempore libero odit sed itaque, consequuntur unde ut hic velit modi iste
+                deleniti enim porro nisi quam esse fuga. Corrupti ratione, voluptas similique hic, voluptates quos
+                inventore nulla eius at cupiditate dolores maxime facilis, suscipit mollitia error autem! Amet, quasi
+                in. Iste, dignissimos magni deserunt maxime quaerat enim molestias.
         </div>
     </section>
 
@@ -82,72 +81,59 @@
     <!----------------------Proyectos----------------------->
 
     <section id="proyectos" class="proyectos-container">
-        <h2>Proyectos</h2>
+        <h2 class="titulo">Proyectos</h2>
+        <!-- Imagen representativa de cada proyecto y un breve resumen -->
         <div class="proyectos">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner" style="max-width: 700px; max-height: 500px;">
-                    <div class="carousel-item active">
-                        <img src="https://source.unsplash.com/random" class="bd-placeholder-img d-block w-100"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Proyecto 1</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quae sapiente corrupti
-                                nostrum laborum! Blanditiis reiciendis ad, natus eum id nemo necessitatibus obcaecati,
-                                nostrum magni incidunt saepe atque dolorem consequuntur.</p>
+            <div class="container-fluid">
+                <div class="row row-cols-2 row-cols-lg-5 g-5 g-lg-3 justify-content-center">
+                    <div class="col" style="margin: 50px;">
+                        <div class="card" style="max-width: 500px;">
+                            <img src="https://source.unsplash.com/random" style="max-height: 350px;"
+                                class="card-img-top" alt="Proyecto 1">
+                            <div class="card-body">
+                                <h4 class="card-title">Nombre Proyecto</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+                                    doloremque ullam
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://source.unsplash.com/random" class="bd-placeholder-img d-block w-100"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Proyecto 2</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quae sapiente corrupti
-                                nostrum laborum! Blanditiis reiciendis ad, natus eum id nemo necessitatibus obcaecati,
-                                nostrum magni incidunt saepe atque dolorem consequuntur..</p>
+                    <div class="col" style="margin: 50px;">
+                        <div class="card" style="max-width: 500px;">
+                            <img src="https://source.unsplash.com/random" style="max-height: 350px;"
+                                class="card-img-top" alt="Proyecto 2">
+                            <div class="card-body">
+                                <h4 class="card-title">Nombre Proyecto</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+                                    doloremque ullam
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://source.unsplash.com/random" class="bd-placeholder-img d-block w-100"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Proyecto 3</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quae sapiente corrupti
-                                nostrum laborum! Blanditiis reiciendis ad, natus eum id nemo necessitatibus obcaecati,
-                                nostrum magni incidunt saepe atque dolorem consequuntur.</p>
+                    <div class="col" style="margin: 50px;">
+                        <div class="card" style="max-width: 500px;">
+                            <img src="https://source.unsplash.com/random" style="max-height: 350px;"
+                                class="card-img-top" alt="Proyecto 3">
+                            <div class="card-body">
+                                <h4 class="card-title">Nombre Proyecto</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+                                    doloremque ullam
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden-focusable">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden-focusable">Siguiente</span>
-                </button>
-            </div>
 
-            <a class="btn btn-outline-light" style="margin: 20px;" href="./pages/proyectos.html" target="blank"
-                id="verMas">
-                <b>+Ver mas proyectos</b>
-            </a>
-        </div>
+                <a class="btn btn-outline-light" style="margin: 20px;" href="./pages/proyectos.html" id="verMas">
+                    <b>+Ver mas proyectos</b>
+                </a>
+            </div>
     </section>
 
 
     <!----------------------Habilidades----------------------->
     <section id="habilidades" class="habilidades-container">
-        <h2>Habilidades</h2>
+        <h2 class="titulo">Habilidades</h2>
         <div class="habilidades">
 
             <!-- Cada item con su "barra de progreso" indicando conocimientos-->
@@ -175,32 +161,54 @@
     </section>
 
 
-    <!----------------------Experiencia----------------------->
-    <section id="experiencias" class="experiencias-container">
-        <h2>Experiencia</h2>
-        <div class="experiencias">
-
-            <div class="experiencia">
-                <!-- Comentarios de referentes sobre mi desempeño -->
-                <img src="./Images/Icono.jpg" alt="Proyecto 1" width="50">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Quis, ducimus.
-                </p>
+    <!----------------------Opiniones----------------------->
+    <section id="opiniones" class="opiniones-container">
+        <h2 class="titulo">Opiniones</h2>
+        <div class="opiniones">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/Icono.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">⭐⭐⭐⭐⭐</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="experiencia">
-                <img src="./Images/Icono.jpg" alt="Proyecto 2" width="50">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Quis, ducimus.
-                </p>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/Icono.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">⭐⭐⭐⭐⭐</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="experiencia">
-                <img src="./Images/Icono.jpg" alt="Proyecto 3" width="50">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Quis, ducimus.
-                </p>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/Icono.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">⭐⭐⭐⭐⭐</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -208,24 +216,25 @@
 
     <!-----------------------Contacto------------------------>
     <section id="contacto" class="contacto-container">
-        <h2>Contacto</h2>
-        <div class="container class="mb-3 row">
+        <h2 class="titulo">Contacto</h2>
+        <div class="contacto">
             <!-- Formulario de contacto -->
             <form class="form-group" style="border: 0ch;">
                 <div class="input-group" style="margin: 5px;">
                     <span class="input-group-text">Nombre y Apellido</span>
                     <input type="text" aria-label="First name" placeholder="Nombre" class="form-control">
                     <input type="text" aria-label="Last name" placeholder="Apellido" class="form-control">
-                  </div>
-                  <div class="input-group flex-nowrap" style="margin: 5px;border: transparent;">
+                </div>
+                <div class="input-group flex-nowrap" style="margin: 5px;border: transparent;">
                     <span class="input-group-text" id="addon-wrapping">Email</span>
                     <input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" aria-label="Email">
-                  </div>
+                </div>
                 <div class="form-control" style="margin: 5px;">
-                    <textarea class="form-control" placeholder="Escribe un mensaje" id="floatingTextarea2" style="height: 100px; border: transparent;"></textarea>
+                    <textarea class="form-control" placeholder="Escribe un mensaje"
+                        style="height: 100px; border: transparent;"></textarea>
                 </div>
                 <div class="form-control" style="margin: 5px; border: transparent;">
-                    <button class="btn btn-primary btn-block" type="submit" value="Enviar" id="submit">Enviar</button>
+                    <button class="btn btn-primary" type="submit" value="Enviar" id="submit">Enviar</button>
                 </div>
             </form>
         </div>
