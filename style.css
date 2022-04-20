@@ -32,7 +32,7 @@
   color: #eeeeee;
 }
 .nav-link:visited{
-  color: #eeeeee;
+  color: #eeeeee !important;
 }
 .nav-link:focus, .nav-link:hover {
   color: #00ADB5 !important;
@@ -63,7 +63,7 @@
   border-radius: 50%;
 }
 
-/* ------------------Sobre Mi------------------- */
+/* ------------------SobreMi------------------- */
 .sobreMi-container {
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@
 .sobreMi{
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 70%;
   margin: 40px;
 }
 /* ------------------Proyectos------------------- */
@@ -117,27 +117,26 @@
   margin: 40px;
 }
 
-/* ------------------Experiencia------------------- */
-.experiencias-container {
+/* ------------------Opiniones------------------- */
+.opiniones-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.experiencias {
-  display: grid;
-  gap: 10px;
-  grid-template-rows: 10rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
+.opiniones{
+  display: flex;
+  gap: 20px;
   margin: 40px;
 }
-
 /* ------------------Contacto------------------- */
 .contacto-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contacto{
+  margin: 20px 0px;
 }
 
 #submit {
