@@ -1,0 +1,26 @@
+.inicio-container {
+    display: grid;
+    background-image: url("/Images/fondo-logo.jpg");
+    background-size: cover;
+    color: #eeeeee;
+    height: 900px;
+
+    .inicio {
+        display: flex;
+        font-size: xxx-large;
+        font-weight: bold;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 200px;
+            background-color: #eeeeee;
+            border-radius: 50%;
+        }
+
+        h1 {}
+
+        h4 {}
+    }
+}

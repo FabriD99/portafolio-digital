@@ -1,0 +1,37 @@
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-weight: bold;
+        background-color: #393e46;
+        color: #eeeeee;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    div {
+        margin: 20px 0px;
+
+        form {
+            #submit {
+                background: linear-gradient(40deg,
+                        rgba(34, 40, 49, 1) 0%,
+                        rgba(19, 75, 83, 1) 3%,
+                        rgba(18, 133, 144, 1) 73%,
+                        rgba(20, 145, 156, 1) 89%,
+                        rgba(18, 161, 171, 1) 97%,
+                        rgba(0, 173, 181, 0.9248074229691877) 100%);
+                color: #eeeeee;
+                border: none;
+
+                &:hover {
+                    transition: 0.2s ease;
+                    opacity: 0.9;
+                    transform: scale(.95);
+                }
+            }
+        }
+    }
+}
