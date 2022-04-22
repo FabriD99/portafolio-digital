@@ -1,0 +1,24 @@
+.menu-container {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    font-size: 20px;
+    
+    nav {
+        background-color: #222831;
+        
+        ul {
+            li {
+                a {
+                    color: #eeeeee;
+                    &:visited{
+                        color: #eeeeee !important;
+                    }
+                    &:hover{
+                        color: #00ADB5 !important;
+                    }
+                }
+            }
+        }
+    }
+}
