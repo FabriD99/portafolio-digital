@@ -1,7 +1,7 @@
+@import 'extends';
+
 .sobreMi-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flexbox-col;
 
     h2 {
         font-weight: bold;

@@ -17,6 +17,13 @@
   color: #00ADB5 !important;
 }
 
+.contacto-container, .opiniones-container, .proyectos-container .proyectos, .proyectos-container, .sobreMi-container, .inicio-container .inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .inicio-container {
   display: grid;
   background-image: url("/Images/fondo-logo.jpg");
@@ -25,23 +32,21 @@
   height: 900px;
 }
 .inicio-container .inicio {
-  display: flex;
   font-size: xxx-large;
   font-weight: bold;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .inicio-container .inicio img {
   width: 200px;
   background-color: #eeeeee;
   border-radius: 50%;
 }
-.sobreMi-container {
+.contacto-container, .opiniones-container, .proyectos-container .proyectos, .proyectos-container, .sobreMi-container, .inicio-container .inicio {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
+
 .sobreMi-container h2 {
   font-weight: bold;
   background-color: #393e46;
@@ -55,22 +60,19 @@
   width: 70%;
   margin: 40px;
 }
-.proyectos-container {
+.contacto-container, .opiniones-container, .proyectos-container .proyectos, .proyectos-container, .inicio-container .inicio, .sobreMi-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
+
 .proyectos-container h2 {
   font-weight: bold;
   background-color: #393e46;
   color: #eeeeee;
   padding: 15px 0;
   width: 100%;
-}
-.proyectos-container .proyectos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .proyectos-container .proyectos a {
   color: #222831;
@@ -99,11 +101,6 @@
   margin: 40px;
 }
 
-.opiniones-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .opiniones-container h2 {
   font-weight: bold;
   background-color: #393e46;
@@ -117,11 +114,13 @@
   margin: 40px;
 }
 
-.contacto-container {
+.contacto-container, .inicio-container .inicio, .sobreMi-container, .proyectos-container, .proyectos-container .proyectos, .opiniones-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
+
 .contacto-container h2 {
   font-weight: bold;
   background-color: #393e46;
@@ -196,6 +195,13 @@
   background-color: #222831;
   color: #eeeeee;
   padding: 20px;
+}
+
+.inicio-container .inicio, .sobreMi-container, .proyectos-container, .proyectos-container .proyectos, .opiniones-container, .contacto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 * {

@@ -1,8 +1,8 @@
-.proyectos-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@import 'extends';
 
+.proyectos-container {
+    @extend %flexbox-col;
+    
     h2 {
         font-weight: bold;
         background-color: #393e46;
@@ -10,14 +10,10 @@
         padding: 15px 0;
         width: 100%;
     }
-
+    
     .proyectos {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
+        @extend %flexbox-col;
+        
         a {
             color: #222831;
             font-size: 20px;
