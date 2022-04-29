@@ -26,9 +26,10 @@
 
 .inicio-container {
   display: grid;
-  background-image: url("/Images/fondo-logo.jpg");
-  background-size: cover;
+  background: linear-gradient(180deg, rgb(34, 40, 49) 0%, rgb(19, 75, 83) 43%, rgb(18, 133, 144) 59%, rgb(20, 145, 156) 75%, rgb(18, 161, 171) 97%, rgba(0, 173, 181, 0.924807423) 100%) white 150%;
+  text-align: center;
   color: #eeeeee;
+  text-shadow: 2px 2px 2px black;
   height: 900px;
 }
 .inicio-container .inicio {
@@ -39,6 +40,7 @@
   width: 200px;
   background-color: #eeeeee;
   border-radius: 50%;
+  box-shadow: 0px 0px 20px black;
 }
 .contacto-container, .opiniones-container, .proyectos-container .proyectos, .proyectos-container, .sobreMi-container, .inicio-container .inicio {
   display: flex;
@@ -143,7 +145,7 @@
 }
 
 .footer-container {
-  background: linear-gradient(56deg, rgb(34, 40, 49) 0%, rgb(19, 75, 83) 43%, rgb(18, 133, 144) 73%, rgb(20, 145, 156) 89%, rgb(18, 161, 171) 97%, rgba(0, 173, 181, 0.924807423) 100%);
+  background: linear-gradient(180deg, rgb(34, 40, 49) 0%, rgb(19, 75, 83) 43%, rgb(18, 133, 144) 79%, white 80%, rgb(20, 145, 156) 81%, rgb(18, 161, 171) 97%, rgba(0, 173, 181, 0.924807423) 100%);
   text-align: center;
   color: #eeeeee;
   padding-bottom: 45px;
