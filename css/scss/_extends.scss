@@ -1,12 +1,10 @@
-%flexbox-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-%flexbox-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@import 'maps';
+
+%h2 {
+    font-weight: bold;
+    background-color: map-get($map: $palette, $key: bg-h2);
+    color: map-get($map: $palette, $key: blanco);
+    padding: 15px 0;
+    width: 100%;
+
 }

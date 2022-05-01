@@ -1,3 +1,11 @@
+.contacto-container h2, .opiniones-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
+  font-weight: bold;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 15px 0;
+  width: 100%;
+}
+
 .menu-container {
   position: fixed;
   width: 100%;
@@ -17,11 +25,12 @@
   color: #00ADB5 !important;
 }
 
-.contacto-container, .opiniones-container, .proyectos-container .proyectos, .proyectos-container, .sobreMi-container, .inicio-container .inicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contacto-container h2, .opiniones-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
+  font-weight: bold;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 15px 0;
+  width: 100%;
 }
 
 .inicio-container {
@@ -33,6 +42,10 @@
   height: 900px;
 }
 .inicio-container .inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-size: xxx-large;
   font-weight: bold;
 }
@@ -42,42 +55,50 @@
   border-radius: 50%;
   box-shadow: 0px 0px 20px black;
 }
-.contacto-container, .opiniones-container, .proyectos-container .proyectos, .proyectos-container, .sobreMi-container, .inicio-container .inicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.sobreMi-container h2 {
+.contacto-container h2, .opiniones-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
   font-weight: bold;
   background-color: #393e46;
   color: #eeeeee;
   padding: 15px 0;
   width: 100%;
+}
+
+.sobreMi-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .sobreMi-container div {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
   width: 70%;
   margin: 40px;
 }
-.contacto-container, .opiniones-container, .proyectos-container .proyectos, .proyectos-container, .inicio-container .inicio, .sobreMi-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.proyectos-container h2 {
+.contacto-container h2, .opiniones-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
   font-weight: bold;
   background-color: #393e46;
   color: #eeeeee;
   padding: 15px 0;
   width: 100%;
 }
+
+.proyectos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.proyectos-container .proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .proyectos-container .proyectos a {
-  color: #222831;
+  color: #393e46;
   font-size: 20px;
   margin: 20px;
 }
@@ -89,26 +110,19 @@
 
 .habilidades-container {
   display: flex;
-  flex-direction: column;
   align-items: stretch;
-}
-.habilidades-container h2 {
-  font-weight: bold;
-  background-color: #393e46;
-  color: #eeeeee;
-  padding: 15px 0;
-  width: 100%;
+  justify-content: center;
+  flex-direction: column;
 }
 .habilidades-container .habilidades {
   margin: 40px;
 }
 
-.opiniones-container h2 {
-  font-weight: bold;
-  background-color: #393e46;
-  color: #eeeeee;
-  padding: 15px 0;
-  width: 100%;
+.opiniones-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .opiniones-container .opiniones {
   display: flex;
@@ -116,19 +130,19 @@
   margin: 40px;
 }
 
-.contacto-container, .inicio-container .inicio, .sobreMi-container, .proyectos-container, .proyectos-container .proyectos, .opiniones-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.contacto-container h2 {
+.contacto-container h2, .sobreMi-container h2, .proyectos-container h2, .habilidades-container h2, .opiniones-container h2 {
   font-weight: bold;
   background-color: #393e46;
   color: #eeeeee;
   padding: 15px 0;
   width: 100%;
+}
+
+.contacto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .contacto-container div {
   margin: 20px 0px;
@@ -191,19 +205,20 @@
 .proyectos-pag-titulo {
   font-family: "Fredoka", sans-serif;
   display: grid;
-  grid-template-columns: 1fr 20fr 1fr;
   align-items: center;
+  grid-template-columns: 1fr 20fr 1fr;
   text-transform: uppercase;
   background-color: #222831;
   color: #eeeeee;
   padding: 20px;
 }
 
-.inicio-container .inicio, .sobreMi-container, .proyectos-container, .proyectos-container .proyectos, .opiniones-container, .contacto-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.sobreMi-container h2, .proyectos-container h2, .habilidades-container h2, .opiniones-container h2, .contacto-container h2 {
+  font-weight: bold;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 15px 0;
+  width: 100%;
 }
 
 * {

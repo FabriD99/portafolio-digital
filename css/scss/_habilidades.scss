@@ -1,14 +1,8 @@
 .habilidades-container {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    @include flexbox(flex, stretch, center, column);
 
     h2 {
-        font-weight: bold;
-        background-color: #393e46;
-        color: #eeeeee;
-        padding: 15px 0;
-        width: 100%;
+        @extend %h2
     }
 
     .habilidades {
