@@ -1,14 +1,12 @@
+@import 'extends';
+@import 'maps';
+@import 'mixin';
+
 .contacto-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(flex, center, center, column);
 
     h2 {
-        font-weight: bold;
-        background-color: #393e46;
-        color: #eeeeee;
-        padding: 15px 0;
-        width: 100%;
+        @extend %h2;
     }
 
     div {
@@ -23,7 +21,7 @@
                         rgba(20, 145, 156, 1) 89%,
                         rgba(18, 161, 171, 1) 97%,
                         rgba(0, 173, 181, 0.9248074229691877) 100%);
-                color: #eeeeee;
+                color: map-get($map: $palette, $key: blanco);
                 border: none;
 
                 &:hover {

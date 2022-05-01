@@ -1,9 +1,10 @@
 .footer-container {
-    background: linear-gradient(56deg,
+    background: linear-gradient(180deg,
             rgba(34, 40, 49, 1) 0%,
             rgba(19, 75, 83, 1) 43%,
-            rgba(18, 133, 144, 1) 73%,
-            rgba(20, 145, 156, 1) 89%,
+            rgba(18, 133, 144, 1) 79%,
+            white 80%,
+            rgba(20, 145, 156, 1) 81%,
             rgba(18, 161, 171, 1) 97%,
             rgba(0, 173, 181, 0.9248074229691877) 100%);
     text-align: center;
@@ -53,6 +54,7 @@
                         filter: invert(1);
                     }
                 }
+
                 img {
                     width: 25px;
                 }

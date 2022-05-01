@@ -1,10 +1,10 @@
 .proyectos-pag-titulo {
     font-family: "Fredoka", sans-serif;
     display: grid;
-    grid-template-columns: 1fr 20fr 1fr;
     align-items: center;
+    grid-template-columns: 1fr 20fr 1fr;
     text-transform: uppercase;
-    background-color: #222831;
-    color: #eeeeee;
+    background-color: map-get($map: $palette, $key: bg-nav);
+    color: map-get($map: $palette, $key: blanco);
     padding: 20px;
   }

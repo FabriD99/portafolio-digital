@@ -1,3 +1,11 @@
+.contacto-container h2, .opiniones-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
+  font-weight: bold;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 15px 0;
+  width: 100%;
+}
+
 .menu-container {
   position: fixed;
   width: 100%;
@@ -17,63 +25,80 @@
   color: #00ADB5 !important;
 }
 
+.contacto-container h2, .opiniones-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
+  font-weight: bold;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 15px 0;
+  width: 100%;
+}
+
 .inicio-container {
   display: grid;
-  background-image: url("/Images/fondo-logo.jpg");
-  background-size: cover;
+  background: linear-gradient(180deg, rgb(34, 40, 49) 0%, rgb(19, 75, 83) 43%, rgb(18, 133, 144) 59%, rgb(20, 145, 156) 75%, rgb(18, 161, 171) 97%, rgba(0, 173, 181, 0.924807423) 100%) white 150%;
+  text-align: center;
   color: #eeeeee;
+  text-shadow: 2px 2px 2px black;
   height: 900px;
 }
 .inicio-container .inicio {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-size: xxx-large;
   font-weight: bold;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .inicio-container .inicio img {
   width: 200px;
   background-color: #eeeeee;
   border-radius: 50%;
+  box-shadow: 0px 0px 20px black;
 }
-.sobreMi-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sobreMi-container h2 {
+.contacto-container h2, .opiniones-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
   font-weight: bold;
   background-color: #393e46;
   color: #eeeeee;
   padding: 15px 0;
   width: 100%;
+}
+
+.sobreMi-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .sobreMi-container div {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
   width: 70%;
   margin: 40px;
 }
-.proyectos-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.proyectos-container h2 {
+.contacto-container h2, .opiniones-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
   font-weight: bold;
   background-color: #393e46;
   color: #eeeeee;
   padding: 15px 0;
   width: 100%;
 }
+
+.proyectos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .proyectos-container .proyectos {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .proyectos-container .proyectos a {
-  color: #222831;
+  color: #393e46;
   font-size: 20px;
   margin: 20px;
 }
@@ -85,15 +110,9 @@
 
 .habilidades-container {
   display: flex;
-  flex-direction: column;
   align-items: stretch;
-}
-.habilidades-container h2 {
-  font-weight: bold;
-  background-color: #393e46;
-  color: #eeeeee;
-  padding: 15px 0;
-  width: 100%;
+  justify-content: center;
+  flex-direction: column;
 }
 .habilidades-container .habilidades {
   margin: 40px;
@@ -101,15 +120,9 @@
 
 .opiniones-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-.opiniones-container h2 {
-  font-weight: bold;
-  background-color: #393e46;
-  color: #eeeeee;
-  padding: 15px 0;
-  width: 100%;
+  justify-content: center;
+  flex-direction: column;
 }
 .opiniones-container .opiniones {
   display: flex;
@@ -117,17 +130,19 @@
   margin: 40px;
 }
 
-.contacto-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contacto-container h2 {
+.contacto-container h2, .sobreMi-container h2, .proyectos-container h2, .habilidades-container h2, .opiniones-container h2 {
   font-weight: bold;
   background-color: #393e46;
   color: #eeeeee;
   padding: 15px 0;
   width: 100%;
+}
+
+.contacto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .contacto-container div {
   margin: 20px 0px;
@@ -144,7 +159,7 @@
 }
 
 .footer-container {
-  background: linear-gradient(56deg, rgb(34, 40, 49) 0%, rgb(19, 75, 83) 43%, rgb(18, 133, 144) 73%, rgb(20, 145, 156) 89%, rgb(18, 161, 171) 97%, rgba(0, 173, 181, 0.924807423) 100%);
+  background: linear-gradient(180deg, rgb(34, 40, 49) 0%, rgb(19, 75, 83) 43%, rgb(18, 133, 144) 79%, white 80%, rgb(20, 145, 156) 81%, rgb(18, 161, 171) 97%, rgba(0, 173, 181, 0.924807423) 100%);
   text-align: center;
   color: #eeeeee;
   padding-bottom: 45px;
@@ -190,12 +205,20 @@
 .proyectos-pag-titulo {
   font-family: "Fredoka", sans-serif;
   display: grid;
-  grid-template-columns: 1fr 20fr 1fr;
   align-items: center;
+  grid-template-columns: 1fr 20fr 1fr;
   text-transform: uppercase;
   background-color: #222831;
   color: #eeeeee;
   padding: 20px;
+}
+
+.sobreMi-container h2, .proyectos-container h2, .habilidades-container h2, .opiniones-container h2, .contacto-container h2 {
+  font-weight: bold;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 15px 0;
+  width: 100%;
 }
 
 * {
