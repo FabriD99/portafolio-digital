@@ -227,5 +227,7 @@
   font-family: "Fredoka", sans-serif;
   text-align: center;
 }
-
+.disclaimer{
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
