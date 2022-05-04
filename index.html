@@ -13,17 +13,22 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Fuentes -->
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Raleway:wght@100&display=swap"
-        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet"> -->
 
     <!-- DESCRIPCIÓN -->
     <meta name="description" content="Desarollador WEB | Front End | Soy Fabrizio Di Stefano, te invito a conocerme 🤙">
 
     <!-- KEYWORDS -->
-    <meta name="keywords" content="proyecto, HTML, Portafolio, portfolio, portafolio digital, portfolio digital, JavaScript, CSS, Bootstrap, React, frontend">
+    <meta name="keywords"
+        content="proyecto, HTML, Portafolio, portfolio, portafolio digital, portfolio digital, JavaScript, CSS, Bootstrap, React, frontend">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
 
     <!-- Enlace Google Docs con SEO (PARA MI)-->
@@ -35,258 +40,267 @@
 <!-- single-page application -->
 
 <body>
-    <!----------------------Menu----------------------->
-    <header class="menu-container">
-        <nav class="menu">
-            <!-- Barra navegable por toda la pagina (que se vea aunque baje en la pagina) -->
-            <ul class="nav nav-tabs nav-fill">
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobreMi">Sobre Mi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#proyectos">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#habilidades">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#opiniones">Opiniones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="body">
+        <!----------------------Menu----------------------->
+        <header class="menu-container">
+            <nav class="menu">
+                <!-- Barra navegable por toda la pagina (que se vea aunque baje en la pagina) -->
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobreMi">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#opiniones">Opiniones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
 
-    <!----------------------Inicio----------------------->
-    <section id="inicio" class="inicio-container">
+        <!----------------------Inicio----------------------->
+        <section id="inicio" class="inicio-container">
 
-        <div class="inicio">
-            <!-- Logo y Descripcion corta -->
-            <img src="images/Logo.png" alt="Logo/Imagen de perfil" width="70">
-            <h1>Fabrizio Di Stefano</h1>
-            <h4>Desarollador WEB</h4>
-        </div>
-    </section>
-
-
-    <!----------------------Sobre Mi----------------------->
-    <section id="sobreMi" class="sobreMi-container">
-        <h2 class="titulo">Sobre Mi</h2>
-        <div class="sobreMi">
-            <!-- Foto y descripcion personal -->
-            <img src="images/Logo.png" alt="Imagen descriptiva">
-            <p id="info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam est neque adipisci aspernatur ut ducimus
-                velit officiis accusantium voluptatem et optio veniam, nostrum excepturi! Asperiores voluptatibus vel,
-                omnis qui laudantium aspernatur tempore libero odit sed itaque, consequuntur unde ut hic velit modi iste
-                deleniti enim porro nisi quam esse fuga. Corrupti ratione, voluptas similique hic, voluptates quos
-                inventore nulla eius at cupiditate dolores maxime facilis, suscipit mollitia error autem! Amet, quasi
-                in. Iste, dignissimos magni deserunt maxime quaerat enim molestias.
-        </div>
-    </section>
+            <div class="inicio">
+                <!-- Logo y Descripcion corta -->
+                <img src="images/favicon.png" alt="Logo/Imagen de perfil">
+                <h1>Fabrizio Di Stefano</h1>
+                <h4>Web Developer</h4>
+            </div>
+        </section>
 
 
-    <!----------------------Proyectos----------------------->
+        <!----------------------Sobre Mi----------------------->
+        <section id="sobreMi" class="sobreMi-container">
+            <h2 class="titulo">Sobre Mi</h2>
+            <div class="sobreMi">
+                <!-- Foto y descripcion personal -->
+                <img src="images/Logo.png" alt="Imagen descriptiva">
+                <p id="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam est neque adipisci aspernatur ut
+                    ducimus
+                    velit officiis accusantium voluptatem et optio veniam, nostrum excepturi! Asperiores voluptatibus
+                    vel,
+                    omnis qui laudantium aspernatur tempore libero odit sed itaque, consequuntur unde ut hic velit modi
+                    iste
+                    deleniti enim porro nisi quam esse fuga. Corrupti ratione, voluptas similique hic, voluptates quos
+                    inventore nulla eius at cupiditate dolores maxime facilis, suscipit mollitia error autem! Amet,
+                    quasi
+                    in. Iste, dignissimos magni deserunt maxime quaerat enim molestias.
+            </div>
+        </section>
 
-    <section id="proyectos" class="proyectos-container">
-        <h2 class="titulo">Proyectos</h2>
-        <!-- Imagen representativa de cada proyecto y un breve resumen -->
-        <div class="proyectos">
-            <div class="container-fluid">
-                <div class="row row-cols-2 row-cols-lg-5 g-5 g-lg-3 justify-content-center">
-                    <div class="col" style="margin: 50px;">
-                        <div class="card" style="max-width: 500px;">
-                            <img src="https://source.unsplash.com/random" style="max-height: 350px;"
-                                class="card-img-top" alt="Proyecto 1">
-                            <div class="card-body">
-                                <h4 class="card-title">Nombre Proyecto</h4>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-                                    doloremque ullam
-                                </p>
+
+        <!----------------------Proyectos----------------------->
+
+        <section id="proyectos" class="proyectos-container">
+            <h2 class="titulo">Proyectos</h2>
+            <!-- Imagen representativa de cada proyecto y un breve resumen -->
+            <div class="proyectos">
+                <div class="container-fluid">
+                    <div class="row row-cols-3 g-5 justify-content-center">
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://source.unsplash.com/random" style="max-height: 20em; min-height: 15em"
+                                    class="card-img-top" alt="Proyecto 1">
+                                <div class="card-body">
+                                    <h4 class="card-title">Nombre Proyecto</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Corrupti
+                                        doloremque ullam
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col" style="margin: 50px;">
-                        <div class="card" style="max-width: 500px;">
-                            <img src="https://source.unsplash.com/random" style="max-height: 350px;"
-                                class="card-img-top" alt="Proyecto 2">
-                            <div class="card-body">
-                                <h4 class="card-title">Nombre Proyecto</h4>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-                                    doloremque ullam
-                                </p>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://source.unsplash.com/random" style="max-height: 20em; min-height: 15em"
+                                    class="card-img-top" alt="Proyecto 2">
+                                <div class="card-body">
+                                    <h4 class="card-title">Nombre Proyecto</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Corrupti
+                                        doloremque ullam
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col" style="margin: 50px;">
-                        <div class="card" style="max-width: 500px;">
-                            <img src="https://source.unsplash.com/random" style="max-height: 350px;"
-                                class="card-img-top" alt="Proyecto 3">
-                            <div class="card-body">
-                                <h4 class="card-title">Nombre Proyecto</h4>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-                                    doloremque ullam
-                                </p>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://source.unsplash.com/random" style="max-height: 20em; min-height: 15em"
+                                    class="card-img-top" alt="Proyecto 3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Nombre Proyecto</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Corrupti
+                                        doloremque ullam
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div>
                 <a class="btn btn-outline-light" href="./pages/proyectos.html" id="verMas">
                     <b>+Ver mas proyectos</b>
                 </a>
             </div>
-    </section>
+        </section>
 
 
-    <!----------------------Habilidades----------------------->
-    <section id="habilidades" class="habilidades-container">
-        <h2 class="titulo">Habilidades</h2>
-        <div class="habilidades">
+        <!----------------------Habilidades----------------------->
+        <section id="habilidades" class="habilidades-container">
+            <h2 class="titulo">Habilidades</h2>
+            <div class="habilidades">
 
-            <!-- Cada item con su "barra de progreso" indicando conocimientos-->
-            <div class="progress" style="height: 100px; margin: 5px;">
-                <div class="progress-bar bg-danger bg-gradient" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                    aria-valuemax="100" style="width: 90%">HTML</div>
+                <!-- Cada item con su "barra de progreso" indicando conocimientos-->
+                <div class="progress" style="height: 100px; margin: 5px;">
+                    <div class="progress-bar bg-danger bg-gradient" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 90%">HTML</div>
+                </div>
+                <div class="progress" style="height: 100px; margin: 5px;">
+                    <div class="progress-bar bg-primary bg-gradient" role="progressbar" style="width: 70%"
+                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                </div>
+                <div class="progress" style="height: 100px; margin: 5px;">
+                    <div class="progress-bar bg-warning bg-gradient" role="progressbar" style="width: 55%"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                </div>
+                <div class="progress" style="height: 100px; margin: 5px;">
+                    <div class="progress-bar bg-success bg-gradient" role="progressbar" style="width: 65%"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+                </div>
+                <div class="progress" style="height: 100px; margin: 5px;">
+                    <div class="progress-bar bg-info bg-gradient" role="progressbar" style="width: 40%"
+                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">React</div>
+                </div>
             </div>
-            <div class="progress" style="height: 100px; margin: 5px;">
-                <div class="progress-bar bg-primary bg-gradient" role="progressbar" style="width: 70%"
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
-            </div>
-            <div class="progress" style="height: 100px; margin: 5px;">
-                <div class="progress-bar bg-warning bg-gradient" role="progressbar" style="width: 55%"
-                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
-            </div>
-            <div class="progress" style="height: 100px; margin: 5px;">
-                <div class="progress-bar bg-success bg-gradient" role="progressbar" style="width: 65%"
-                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
-            </div>
-            <div class="progress" style="height: 100px; margin: 5px;">
-                <div class="progress-bar bg-info bg-gradient" role="progressbar" style="width: 40%" aria-valuenow="100"
-                    aria-valuemin="0" aria-valuemax="100">React</div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!----------------------Opiniones----------------------->
-    <section id="opiniones" class="opiniones-container">
-        <h2 class="titulo">Opiniones</h2>
-        <div class="opiniones">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/Icono.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">⭐⭐⭐⭐⭐</small></p>
+        <!----------------------Opiniones----------------------->
+        <section id="opiniones" class="opiniones-container">
+            <h2 class="titulo">Opiniones</h2>
+            <div class="opiniones">
+                <div class="card">
+                    <div class="col">
+                            <img src="images/Icono.jpg" class="img" alt="foto opinion">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/Icono.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">⭐⭐⭐⭐⭐</small></p>
+                        <div class="col">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">⭐⭐⭐⭐⭐</small></p>
+                            </div>
                         </div>
-                    </div>
                 </div>
-            </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/Icono.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">⭐⭐⭐⭐⭐</small></p>
+                <div class="card">
+                    <div class="col">
+                            <img src="images/Icono.jpg" class="img" alt="foto opinion">
                         </div>
-                    </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">⭐⭐⭐⭐⭐</small></p>
+                            </div>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="col">
+                            <img src="images/Icono.jpg" class="img" alt="foto opinion">
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">⭐⭐⭐⭐⭐</small></p>
+                            </div>
+                        </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!-----------------------Contacto------------------------>
-    <section id="contacto" class="contacto-container">
-        <h2 class="titulo">Contacto</h2>
-        <div class="contacto">
-            <!-- Formulario de contacto -->
-            <form class="form-group" style="border: 0ch;">
-                <div class="input-group" style="margin: 5px;">
-                    <span class="input-group-text">Nombre y Apellido</span>
-                    <input type="text" aria-label="First name" placeholder="Nombre" class="form-control">
-                    <input type="text" aria-label="Last name" placeholder="Apellido" class="form-control">
-                </div>
-                <div class="input-group flex-nowrap" style="margin: 5px;border: transparent;">
-                    <span class="input-group-text" id="addon-wrapping">Email</span>
-                    <input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" aria-label="Email">
-                </div>
-                <div class="form-control" style="margin: 5px;">
-                    <textarea class="form-control" placeholder="Escribe un mensaje"
-                        style="height: 100px; border: transparent;"></textarea>
-                </div>
-                <div class="form-control" style="margin: 5px; border: transparent;">
-                    <button class="btn btn-primary" type="submit" value="Enviar" id="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
-    </section>
+        <!-----------------------Contacto------------------------>
+        <section id="contacto" class="contacto-container">
+            <h2 class="titulo">Contacto</h2>
+            <div class="contacto">
+                <!-- Formulario de contacto -->
+                <form class="form-group" style="border: 0ch;">
+                    <div class="input-group" style="margin: 5px;">
+                        <span class="input-group-text">Nombre y Apellido</span>
+                        <input type="text" aria-label="First name" placeholder="Nombre" class="form-control">
+                        <input type="text" aria-label="Last name" placeholder="Apellido" class="form-control">
+                    </div>
+                    <div class="input-group flex-nowrap" style="margin: 5px;border: transparent;">
+                        <span class="input-group-text" id="addon-wrapping">Email</span>
+                        <input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" aria-label="Email">
+                    </div>
+                    <div class="form-control" style="margin: 5px;">
+                        <textarea class="form-control" placeholder="Escribe un mensaje"
+                            style="height: 100px; border: transparent;"></textarea>
+                    </div>
+                    <div class="form-control" style="margin: 5px; border: transparent;">
+                        <button class="btn btn-primary" type="submit" value="Enviar" id="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
 
-    <!------------------------Footer------------------------->
-    <footer class="footer-container">
-        <div class="footer">
-            <!-- Logo/imagen de prefil y email de contacto -->
-            <img src="images/Logo.png" alt="Logo/Imagen de perfil" id="logo">
-            <p>fabriziodistefano987@gmail.com</p>
+        <!------------------------Footer------------------------->
+        <footer class="footer-container">
+            <div class="footer">
+                <!-- Logo/imagen de prefil y email de contacto -->
+                <img src="images/Logo2.png" alt="Logo/Imagen de perfil" id="logo">
 
-            <!-- Los items de las Redes Sociales con su Icono -->
-            <ul class="redes">
-                <li>
-                    <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"
-                        href="https://www.linkedin.com/in/fabrizio-di-stefano/" target="blank">
-                        <img src="images/Picons Social/PNG/512/social-011_linkedin.png" alt="LinkedIn" id="linkedin">
-                    </a>
+                <!-- Los items de las Redes Sociales con su Icono -->
+                <ul class="redes">
+                    <li>
+                        <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"
+                            href="https://www.linkedin.com/in/fabrizio-di-stefano/" target="blank">
+                            <img src="images/Picons Social/PNG/512/social-011_linkedin.png" alt="LinkedIn"
+                                id="linkedin">
+                        </a>
 
-                </li>
-                <li>
-                    <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"
-                        href="https://www.instagram.com/fabri.distefano/" target="blank">
-                        <img src="images/Picons Social/PNG/512/social-038_instagram.png" alt="Instagram" id="instagram">
-                    </a>
-                </li>
-                <li>
-                    <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github"
-                        href="https://github.com/FabriD99" target="blank">
-                        <img src="images/Picons Social/PNG/512/social-041-round_github.png" alt="Github" id="github">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
+                    </li>
+                    <li>
+                        <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"
+                            href="https://www.instagram.com/fabri.distefano/" target="blank">
+                            <img src="images/Picons Social/PNG/512/social-038_instagram.png" alt="Instagram"
+                                id="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github"
+                            href="https://github.com/FabriD99" target="blank">
+                            <img src="images/Picons Social/PNG/512/social-041-round_github.png" alt="Github"
+                                id="github">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

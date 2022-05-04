@@ -3,7 +3,6 @@
 @import 'mixin';
 
 .sobreMi-container {
-    @include flexbox(flex, center, center, column);
     
     h2 {
         @extend %h2;
