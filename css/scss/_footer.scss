@@ -24,7 +24,7 @@
                     transition: 0.2s ease;
 
                     &:hover {
-                        transform: scale(2);
+                        transform: scale(1.6);
                         filter: invert(1);
                     }
                 }
@@ -33,7 +33,7 @@
                     transition: 0.2s ease;
 
                     &:hover {
-                        transform: scale(2);
+                        transform: scale(1.6);
                         filter: invert(1);
                     }
                 }
@@ -42,13 +42,13 @@
                     transition: 0.2s ease;
 
                     &:hover {
-                        transform: scale(2);
+                        transform: scale(1.6);
                         filter: invert(1);
                     }
                 }
 
                 img {
-                    width: 25px;
+                    width: 35px;
                 }
 
             }

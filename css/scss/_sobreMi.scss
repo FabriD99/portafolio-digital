@@ -5,16 +5,24 @@
 .sobreMi-container {
     
     h2 {
-        @extend %h2;
+        @extend %h2-light;
     }
     
     div {
         @include flexbox(flex, center, center, row);
-        width: 70%;
-        margin: 40px;
+        width: 80%;
+        height: 30em;
+        
+       
+        img {
+            height: inherit;
+            filter: grayscale(1);
+            
+        }
 
-        img {}
-
-        p {}
+        p {
+            margin: 20px;
+            width: auto;
+        }
     }
 }

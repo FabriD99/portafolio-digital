@@ -1,11 +1,25 @@
 .habilidades-container {
     @include flexbox(flex, stretch, center, column);
+    height: 400px;
 
     h2 {
-        @extend %h2
+        @extend %h2-light
     }
 
     .habilidades {
+        @include flexbox(flex, center, space-evenly, row);
+        flex-wrap: wrap;
         margin: 40px;
+
+        img{
+            width: 6em;
+            transition: 0.4s ease;
+            filter: grayscale(1);
+
+            &:hover {
+                transform: scale(1.5);
+                filter: grayscale(0);
+            }
+        }
     }
 }

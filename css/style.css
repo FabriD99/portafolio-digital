@@ -1,8 +1,17 @@
-.contacto-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
+.contacto-container h2, .habilidades-container h2, .sobreMi-container h2 {
   font-weight: bold;
   color: rgb(28, 28, 29);
   padding: 15px 0;
   width: 100%;
+  text-transform: uppercase;
+}
+
+.opiniones-container h2, .proyectos-container h2 {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 .menu-container {
@@ -18,11 +27,20 @@
   color: !important;
 }
 
-.contacto-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
+.contacto-container h2, .habilidades-container h2, .sobreMi-container h2 {
   font-weight: bold;
   color: rgb(28, 28, 29);
   padding: 15px 0;
   width: 100%;
+  text-transform: uppercase;
+}
+
+.opiniones-container h2, .proyectos-container h2 {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 .inicio-container {
@@ -56,11 +74,20 @@
   font-weight: bold;
 }
 
-.contacto-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
+.contacto-container h2, .habilidades-container h2, .sobreMi-container h2 {
   font-weight: bold;
   color: rgb(28, 28, 29);
   padding: 15px 0;
   width: 100%;
+  text-transform: uppercase;
+}
+
+.opiniones-container h2, .proyectos-container h2 {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 .sobreMi-container div {
@@ -68,16 +95,37 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 70%;
-  margin: 40px;
+  width: 80%;
+  height: 30em;
 }
-.contacto-container h2, .habilidades-container h2, .proyectos-container h2, .sobreMi-container h2 {
+.sobreMi-container div img {
+  height: inherit;
+  filter: grayscale(1);
+}
+.sobreMi-container div p {
+  margin: 20px;
+  width: auto;
+}
+
+.contacto-container h2, .habilidades-container h2, .sobreMi-container h2 {
   font-weight: bold;
   color: rgb(28, 28, 29);
   padding: 15px 0;
   width: 100%;
+  text-transform: uppercase;
 }
 
+.opiniones-container h2, .proyectos-container h2 {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.proyectos-container {
+  background-color: rgb(28, 28, 29);
+}
 .proyectos-container .proyectos {
   display: flex;
   align-items: center;
@@ -85,13 +133,14 @@
   flex-direction: column;
 }
 .proyectos-container a {
-  color: rgb(28, 28, 29);
+  color: rgb(255, 255, 255);
+  background-color: rgb(28, 28, 29);
   font-size: 20px;
   margin: 20px;
 }
 .proyectos-container a:hover {
-  background-color: rgb(143, 143, 143);
-  color: rgb(255, 255, 255);
+  color: rgb(28, 28, 29);
+  background-color: rgb(255, 255, 255);
   transition: 0.2s ease;
 }
 
@@ -100,9 +149,24 @@
   align-items: stretch;
   justify-content: center;
   flex-direction: column;
+  height: 400px;
 }
 .habilidades-container .habilidades {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 40px;
+}
+.habilidades-container .habilidades img {
+  width: 6em;
+  transition: 0.4s ease;
+  filter: grayscale(1);
+}
+.habilidades-container .habilidades img:hover {
+  transform: scale(1.5);
+  filter: grayscale(0);
 }
 
 .opiniones-container {
@@ -111,9 +175,6 @@
   justify-content: space-evenly;
   flex-direction: column;
   background-color: rgb(28, 28, 29);
-}
-.opiniones-container h2 {
-  color: rgb(255, 255, 255);
 }
 .opiniones-container .opiniones {
   display: flex;
@@ -135,33 +196,44 @@
 }
 .opiniones-container .opiniones .card img {
   border-radius: 50%;
-  width: 10em;
+  width: 9em;
 }
 
-.contacto-container h2, .sobreMi-container h2, .proyectos-container h2, .habilidades-container h2 {
+.contacto-container h2, .sobreMi-container h2, .habilidades-container h2 {
   font-weight: bold;
   color: rgb(28, 28, 29);
   padding: 15px 0;
   width: 100%;
+  text-transform: uppercase;
+}
+
+.proyectos-container h2, .opiniones-container h2 {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 .contacto-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 .contacto-container div {
   margin: 20px 0px;
 }
-.contacto-container div form #submit {
-  background: linear-gradient(40deg, rgb(34, 40, 49) 0%, rgb(19, 75, 83) 3%, rgb(18, 133, 144) 73%, rgb(20, 145, 156) 89%, rgb(18, 161, 171) 97%, rgba(0, 173, 181, 0.924807423) 100%);
-  border: none;
+.contacto-container div #submit {
+  color: rgb(28, 28, 29);
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin: 20px;
 }
-.contacto-container div form #submit:hover {
+.contacto-container div #submit:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(28, 28, 29);
   transition: 0.2s ease;
-  opacity: 0.9;
-  transform: scale(0.95);
 }
 
 .footer-container {
@@ -189,25 +261,25 @@
   transition: 0.2s ease;
 }
 .footer-container .footer ul li #linkedin:hover {
-  transform: scale(2);
+  transform: scale(1.6);
   filter: invert(1);
 }
 .footer-container .footer ul li #instagram {
   transition: 0.2s ease;
 }
 .footer-container .footer ul li #instagram:hover {
-  transform: scale(2);
+  transform: scale(1.6);
   filter: invert(1);
 }
 .footer-container .footer ul li #github {
   transition: 0.2s ease;
 }
 .footer-container .footer ul li #github:hover {
-  transform: scale(2);
+  transform: scale(1.6);
   filter: invert(1);
 }
 .footer-container .footer ul li img {
-  width: 25px;
+  width: 35px;
 }
 
 .proyectos-pag-titulo {
@@ -219,11 +291,20 @@
   padding: 20px;
 }
 
-.sobreMi-container h2, .proyectos-container h2, .habilidades-container h2, .contacto-container h2 {
+.sobreMi-container h2, .habilidades-container h2, .contacto-container h2 {
   font-weight: bold;
   color: rgb(28, 28, 29);
   padding: 15px 0;
   width: 100%;
+  text-transform: uppercase;
+}
+
+.proyectos-container h2, .opiniones-container h2 {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 * {

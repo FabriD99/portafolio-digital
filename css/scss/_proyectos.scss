@@ -1,9 +1,10 @@
 @import 'extends';
 
 .proyectos-container {
+    background-color: map-get($map: $palette, $key: color1);
 
     h2 {
-        @extend %h2;
+        @extend %h2-dark;
     }
 
     .proyectos {
@@ -11,13 +12,14 @@
 
     }
     a {
-        color: map-get($map: $palette, $key: color1);
+        color: map-get($map: $palette, $key: color3);;
+        background-color: map-get($map: $palette, $key: color1);
         font-size: 20px;
         margin: 20px;
-
+        
         &:hover {
-            background-color: map-get($map: $palette, $key: color2);
-            color: map-get($map: $palette, $key: color3);;
+            color: map-get($map: $palette, $key: color1);
+            background-color: map-get($map: $palette, $key: color3);
             transition: 0.2s ease;
         }
     }
