@@ -12,7 +12,7 @@
         @include flexbox(flex, center, center, row);
         width: 80%;
         height: 30em;
-        
+        gap: 2em;
        
         img {
             height: inherit;
@@ -23,6 +23,7 @@
         p {
             margin: 20px;
             width: auto;
+            text-align: justify;
         }
     }
 }

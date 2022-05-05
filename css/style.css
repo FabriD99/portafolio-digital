@@ -97,6 +97,7 @@
   flex-direction: row;
   width: 80%;
   height: 30em;
+  gap: 2em;
 }
 .sobreMi-container div img {
   height: inherit;
@@ -105,6 +106,7 @@
 .sobreMi-container div p {
   margin: 20px;
   width: auto;
+  text-align: justify;
 }
 
 .contacto-container h2, .habilidades-container h2, .sobreMi-container h2 {
@@ -288,6 +290,8 @@
   align-items: center;
   grid-template-columns: 1fr 20fr 1fr;
   text-transform: uppercase;
+  background-color: rgb(28, 28, 29);
+  color: rgb(255, 255, 255);
   padding: 20px;
 }
 
