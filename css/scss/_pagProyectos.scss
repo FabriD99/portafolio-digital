@@ -1,10 +1,28 @@
 .proyectos-pag-titulo {
-    font-family: "Fredoka", sans-serif;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 20fr 1fr;
-    text-transform: uppercase;
-    background-color: map-get($map: $palette, $key: color1);
+  font-family: "Fredoka", sans-serif;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 20fr 1fr;
+  text-transform: uppercase;
+  background-color: map-get($map: $palette, $key: color1);
+  color: map-get($map: $palette, $key: color3);
+  padding: 1.2em;
+
+  #verMas {
     color: map-get($map: $palette, $key: color3);
-    padding: 20px;
+    ;
+    background-color: map-get($map: $palette, $key: color1);
+    font-size: 1.2em;
+    margin: 1.2em;
+
+    &:hover {
+      color: map-get($map: $palette, $key: color1);
+      background-color: map-get($map: $palette, $key: color3);
+      transition: 0.2s ease;
+    }
   }
+
+  .card {
+    box-shadow: 0.7em 0.7em 1em black;
+  }
+}

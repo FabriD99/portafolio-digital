@@ -6,20 +6,20 @@
     position: fixed;
     width: 100%;
     z-index: 100;
-    font-size: 20px;
+    font-size: 1.2em;
     
-    nav {
-        background-color: map-get($map: $palette, $key: bg-nav);
+    .menu {
+        background-color: map-get($map: $palette, $key: color1);
         
         ul {
             li {
                 a {
-                    color: map-get($map: $palette, $key: blanco);
+                    color: map-get($map: $palette, $key: color3);
                     &:visited{
-                        color: map-get($map: $palette, $key: blanco) !important;
+                        color: map-get($map: $palette, $key: color3) !important;
                     }
                     &:hover{
-                        color: map-get($map: $palette, $key: hover) !important;
+                        color: map-get($map: $palette, $key: color2) !important;
                     }
                 }
             }

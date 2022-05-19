@@ -3,14 +3,14 @@
 %h2-light {
     font-weight: bold;
     color: map-get($map: $palette, $key: color1);
-    padding: 15px 0;
+    padding: 1em 0;
     width: 100%;
     text-transform: uppercase;
 }
 %h2-dark {
     font-weight: bold;
     color: map-get($map: $palette, $key: color3);
-    padding: 15px 0;
+    padding: 1em 0;
     width: 100%;
     text-transform: uppercase;
 }

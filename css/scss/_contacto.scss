@@ -10,7 +10,7 @@
     }
 
     div {
-        margin: 20px 0px;
+        margin: 1.2em 0em;
 
         
 
@@ -18,8 +18,8 @@
 
             color: map-get($map: $palette, $key: color1);
             background-color: map-get($map: $palette, $key: color3);
-            font-size: 20px;
-            margin: 20px;
+            font-size: 1.2em;
+            margin: 1.2em;
             
             &:hover {
                 color: map-get($map: $palette, $key: color3);

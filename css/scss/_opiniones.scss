@@ -9,14 +9,14 @@
     .opiniones {
         @include flexbox(flex, center, space-evenly, row);
         flex-wrap: wrap;
-        gap: 3em;
+        width: 100%;
 
         .card {
-            max-width: 30em;
+            width: 30%;
             @include flexbox(flex, center, center, column);
             background-color: map-get($map: $palette, $key: color1);
-            box-shadow: 1px 3px 10px map-get($map: $palette, $key: color2);
             color: map-get($map: $palette, $key: color3);
+            box-shadow: 0.7em 0.7em 1em black;
 
             img {
                 border-radius: 50%;

@@ -1,0 +1,7 @@
+ 
+
+<!-- Enlace Google Docs con SEO (PARA MI)-->
+	<!-- https://docs.google.com/document/d/1I87WZyrC-xPpdudCvn3eT8q4qjTbIVSpYVIkQc8o5IE/edit?usp=sharing -->
+
+<!-- Comando SASS -->
+	<!-- " sass --watch css/scss/style.scss css/style.css " -->

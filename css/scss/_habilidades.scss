@@ -1,6 +1,6 @@
 .habilidades-container {
     @include flexbox(flex, stretch, center, column);
-    height: 400px;
+    height: 25em;
 
     h2 {
         @extend %h2-light
@@ -9,7 +9,7 @@
     .habilidades {
         @include flexbox(flex, center, space-evenly, row);
         flex-wrap: wrap;
-        margin: 40px;
+        margin: 4em;
 
         img{
             width: 6em;

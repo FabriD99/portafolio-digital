@@ -17,11 +17,12 @@
   font-family: 'Roboto Slab', serif;
   text-align: center;
 }
-.disclaimer{
+
+.disclaimer {
   display: none;
 }
 
-section{
+section {
   @include flexbox(flex, center, space-evenly, column);
-  height: 900px;
+  height: 60em;
 }

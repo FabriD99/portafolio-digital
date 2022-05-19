@@ -3,26 +3,26 @@
 @import 'mixin';
 
 .sobreMi-container {
-    
+
     h2 {
         @extend %h2-light;
     }
-    
+
     div {
         @include flexbox(flex, center, center, row);
-        width: 80%;
-        height: 30em;
+        flex-wrap: wrap;
+        height: 80%;
         gap: 2em;
-       
+        margin: 0 5em;
+
         img {
-            height: inherit;
+            max-width: 25em;
             filter: grayscale(1);
-            
+
         }
 
         p {
-            margin: 20px;
-            width: auto;
+            max-width: 40em;
             text-align: justify;
         }
     }
